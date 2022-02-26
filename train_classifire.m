@@ -80,7 +80,7 @@ end
 
 save net
 
-I = imread(".\Flowers\daisy\image_0854.jpg");
+I = imread("Flowers/Flowers/daisy/image_0854.jpg");
 I2= imresize(I,[64,64],'nearest');
 [Pred,scores] = classify(net,I2);
 scores = max(double(scores*100));
